@@ -1,0 +1,22 @@
+
+
+input[type=number] {
+  width: 5%;
+  padding: 5px ;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number].cVals {
+	width:10%;
+}
+.changeVals {
+	padding-left: 150px;
+	
+}
+#forButton {
+	padding-left: 620px;
+	
+}

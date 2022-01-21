@@ -1,0 +1,61 @@
+
+<html>
+<head>
+	<script src="gl-matrix.js"> </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="Choice.js"> </script>
+</head>
+
+<body onload="chooser()">
+	<canvas id = "Julia" width="500" height="500" style = "float:left"> </canvas>
+	<div>
+		<canvas id = "Julia3D" width="500" height="500" style = "float:right" > </canvas> 
+	<br>
+	<div>
+
+	<form id = "updateVals">
+
+		<label style = "font-weight:bold" class = "changeVals">C Values: </label>
+	<br>
+		<label for="CReal" class = "changeVals" >X value: </label>
+		<input type="number" class = "cVals" id="CReal" name="CReal" min="-5" max="5" value=0.0 step=0.1> 
+    <br>
+		<label for="CImaginary" class = "changeVals">Y value: </label>
+		<input type="number" class = "cVals" id="CImaginary" name="CImaginary" min="-5" max="5" value = 0.0  step=0.1>
+	<br>
+		<label style = "font-weight:bold" class = "changeVals"> Z and W are used for the 3D verison </label>
+	<br>
+		<label for="Z" class = "changeVals">Z value: </label>
+		<input type="number" class = "cVals" id="Z" name="Z" min="-5" max="5" value=0.0 step=0.1>
+	<br>
+		<label for="W" class = "changeVals">W value: </label>
+		<input type="number" class = "cVals" id="W" name="W" min="-5" max="5" value = 0.0 step=0.1>
+	<br>
+		<label for="Bailout" class = "changeVals">Bailout: </label>
+		<input type="number" id="Bailout" name="Bailout" min="10"  value=10>
+	<br>
+		<label for="Escape" class = "changeVals">Escape Value: </label>
+		<input type="number" id="Escape" name="Escape" min="2"  value=2 >
+	<br>
+
+	</form>
+	<div id = "forButton">
+		<button  value = "submit" style = " height: 5%; width: 15%; margin:8px 30px;" type="button" id = "drawButton" onclick = "chooser()"  >Draw</button>
+	</div>
+	</div>
+	</div>
+	<label for = "RotateY" class = "changeVals"> Rotate Y-axis: </label>
+	<input type="checkbox" id="RotateY" name="RotateY" value="True">
+	<br>
+	<label for = "RotateX" class = "changeVals"> Rotate X-axis: </label>
+	<input type="checkbox" id="RotateX" name="RotateX" value="True">
+	<br>
+	<label for = "RotateZ" class = "changeVals"> Rotate Z-axis: </label>
+	<input type="checkbox" id="RotateZ" name="RotateZ" value="True">
+	<br>
+	<script src="Math.js"> </script>
+	<script src="Math2.js"> </script>
+
+</body>
+</html>
